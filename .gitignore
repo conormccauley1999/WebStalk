@@ -1,2 +1,5 @@
 src/config.ini
 *.log
+*.pyc
+__pycache__/
+

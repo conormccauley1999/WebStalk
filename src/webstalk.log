@@ -1,0 +1,19 @@
+[INFO] - (18/07/2020 17:28:15) - Starting WebStalk
+[PASS] - (18/07/2020 17:28:18) - Sent an email to the user
+[PASS] - (18/07/2020 17:28:21) - Sent a text message to the user
+[INFO] - (18/07/2020 17:28:34) - Starting WebStalk
+[INFO] - (18/07/2020 17:28:44) - Checking for changes to webpage
+[INFO] - (18/07/2020 17:28:44) - No changes were found
+[PASS] - (18/07/2020 17:28:44) - Finished checking for changes
+[INFO] - (18/07/2020 17:29:09) - Starting WebStalk
+[INFO] - (18/07/2020 17:29:19) - Checking for changes to webpage
+[INFO] - (18/07/2020 17:29:19) - No changes were found
+[PASS] - (18/07/2020 17:29:19) - Finished checking for changes
+[INFO] - (18/07/2020 17:29:29) - Checking for changes to webpage
+[INFO] - (18/07/2020 17:29:29) - Changes were found - notifying the user
+[PASS] - (18/07/2020 17:29:31) - Sent an email to the user
+[PASS] - (18/07/2020 17:29:32) - Sent a text message to the user
+[PASS] - (18/07/2020 17:29:32) - Finished checking for changes
+[INFO] - (18/07/2020 17:29:42) - Checking for changes to webpage
+[INFO] - (18/07/2020 17:29:42) - No changes were found
+[PASS] - (18/07/2020 17:29:42) - Finished checking for changes

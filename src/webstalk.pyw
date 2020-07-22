@@ -35,15 +35,21 @@ def webstalk():
 
 
 def check_and_notify(log, page_checker, notifier, wait):
-    log.info("Checking for changes to webpage")
-    changed = page_checker.check()
-    if changed:
-        log.info("Changes were found - notifying the user")
-        notifier.notify(page_checker.webpage)
-    else:
-        log.info("No changes were found")
-    log.succ("Finished checking for changes")
-    schedule.enter(wait, 1, check_and_notify, (log, page_checker, notifier, wait,))
+    try:
+        log.info("Checking for changes to webpage")
+        changed = page_checker.check()
+        if changed:
+            log.info("Changes were found - notifying the user")
+            notifier.notify(page_checker.webpage)
+        else:
+            log.info("No changes were found")
+        log.succ("Finished checking for changes")
+    except Exception as e:
+        log.fail("An error occurred: " + str(e))
+    try:
+        schedule.enter(wait, 1, check_and_notify, (log, page_checker, notifier, wait,))
+    except Exception as e:
+        log.fail("A fatal error occurred: " + str(e))
 
 
 if __name__ == "__main__":
